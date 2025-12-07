@@ -1,0 +1,20 @@
+[package]
+name = "payment-engine-cli"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+# Local
+payment-engine = { workspace = true }
+
+# External
+anyhow = { workspace = true }
+clap = { workspace = true }
+csv = { workspace = true }
+rust_decimal = { workspace = true }
+serde = { workspace = true }
+tokio = { workspace = true }
+
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }

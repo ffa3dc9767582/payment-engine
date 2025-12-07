@@ -1,0 +1,39 @@
+# Git
+.git/
+.gitignore
+
+# Build artifacts
+target/
+**/*.rs.bk
+*.pdb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation
+docs/
+*.md
+
+# Test data (we'll mount these as volumes instead)
+example_inputs/
+
+# Development files
+.env
+.env.*
+shell.nix
+.direnv/
+
+# macOS
+.DS_Store
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Docker
+Dockerfile
+.dockerignore

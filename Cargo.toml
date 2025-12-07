@@ -1,0 +1,18 @@
+[workspace]
+members = ["src/cli", "src/engine"]
+resolver = "3"
+package.edition = "2024"
+
+[workspace.dependencies]
+# Local
+payment-engine = { path = "src/engine" }
+
+# External
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+csv = "1"
+rust_decimal = "1"
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+pretty_assertions = "1"
